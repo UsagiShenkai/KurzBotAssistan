@@ -1142,9 +1142,9 @@ else if(menusimpel = true){
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `┌───「 \`\`\`Kurz Bot Assistan\`\`\` 」
+       menu = `┌───「 \`\`\`Yume Bot Assistan\`\`\` 」
 │
-🏴‍☠️ _Creator : *KurrXd* 
+🏴‍☠️ _Creator : *ᴛᴜᴍᴇ* 
 🏴‍☠️ _Battery : ${baterai.battery}_
 🏴‍☠️ _Mode : ${publik ? 'Public' : 'Self'}_
 🏴‍☠️ _Total Hit : ${cmhit.length}_
@@ -1152,7 +1152,7 @@ else if(menusimpel = true){
 │
 🏴‍☠️───「 \`\`\`INFO BOT\`\`\` 」
 │
-🏴‍☠️ _Nama Bot : Kurz Bot Assistan_
+🏴‍☠️ _Nama Bot : Yume Bot Assistan_
 🏴‍☠️ _Nama Owner : ${NamaOwner}_
 🏴‍☠️ _Nomor Owner : @${otod.split('@')[0]}_
 🏴‍☠️ _Auto Composing : ${settings.autocomposing}_
@@ -1166,7 +1166,7 @@ else if(menusimpel = true){
 🏴‍☠️ _Nomor : @${stod.split('@')[0]}_
 🏴‍☠️ _Info Nomor : ${num.data.country_code} - ${num.data.carrier.type} - ${num.data.carrier.name}_
 │
-└───「 \`\`\`Kurz Bot Assistan\`\`\` 」`
+└───「 \`\`\`Yume Bot Assistan\`\`\` 」`
 sendButLocation(from, `${menu}`, "*_© Kurz Bot Assistan_*", {jpegThumbnail:ofrply,name:""}, [{buttonId:`command`,buttonText:{displayText:'BUTTON MENU'},type:1},{buttonId:`owner`,buttonText:{displayText:'DEVELOPER'},type:1},{buttonId:`script`,buttonText:{displayText:'SOURCE CODE'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
 break
@@ -1174,7 +1174,7 @@ case 'allmenu':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
-       nama = '🏴‍☠️ Kurz Bot Assistan 🏴‍☠️'
+       nama = '🏴‍☠️ Yume Bot Assistan 🏴‍☠️'
        ownerJid = "6281220670449@s.whatsapp.net"
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
@@ -1483,7 +1483,7 @@ const serialUser = createSerial(18)
 🏴‍☠️ *🏴‍☠️ Pengguna:* ${_registered.length}
 └❏
 
-*「 Kurz Bot Assistan 」*`
+*「 Yume Bot Assistan 」*`
 gbutsan = [
 {buttonId:`menu`,buttonText:{displayText:'🏴‍☠️MENU🏴‍☠️'},type:1},
 {buttonId:`donasi`,buttonText:{displayText:'💗DONASI💗'},type:1}
@@ -1492,7 +1492,7 @@ mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const sendBtnVeryy = {
 imageMessage: mhan.message.imageMessage,
 contentText:`${jancok}`,
-footerText:'Terimakasih Sudah Mendaftar\n*_© kurr_*', 
+footerText:'Terimakasih Sudah Mendaftar\n*_© yume_*', 
 buttons: gbutsan,
 headerType: 4
 }
@@ -1505,7 +1505,7 @@ case 'command':
  stod = `${sender}`
  listMsg = {
  buttonText: 'LIST MENU',
- footerText: '*_© Kurz Bot Assistan_*',
+ footerText: '*_© Yume Bot Assistan_*',
  description: `Hai kak @${stod.split('@')[0]}, Silahkan pilih menu disini`,
  sections: [
                      {
